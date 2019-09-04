@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/bg"
+    tools:context="com.newland.airconditionercontroller.activity.LoginActivity">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:paddingLeft="@dimen/length_20dp"
+        android:paddingRight="@dimen/length_20dp"
+        android:background="#A6ffffff"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="275dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/about_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center|left"
+            android:layout_marginLeft="@dimen/length_20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/about_message1"
+                android:textSize="@dimen/text_size_28"
+                android:textColor="#0069df"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="@string/about_message5"
+                android:textSize="@dimen/text_size_28"
+                android:textColor="#0069df"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/text_size_18"
+                android:text="@string/about_message2"
+                android:textColor="#404040"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/text_size_18"
+                android:text="@string/about_message3"
+                android:layout_width="wrap_content"
+                android:textColor="#404040"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/text_size_16"
+                android:text="@string/about_message4"
+                android:textColor="#404040"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center|bottom"
+        android:layout_marginBottom="@dimen/length_45dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/edu_logo"/>
+    </LinearLayout>
+
+</LinearLayout>

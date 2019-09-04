@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/bg"
+    tools:context=".activity.SettingActivity">
+
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:background="#A6ffffff"
+        android:padding="@dimen/length_10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="@dimen/view_gas"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/text_blue"
+                android:textSize="@dimen/text_size_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上限值:"/>
+
+            <EditText
+                android:gravity="center"
+                android:id="@+id/upper_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_marginLeft="@dimen/view_gas"
+                android:maxLength="2"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dddddd"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="@dimen/view_gas"
+            android:orientation="horizontal">
+            <TextView
+                android:textColor="@color/text_blue"
+                android:textSize="@dimen/text_size_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下限值:"/>
+
+            <EditText
+                android:id="@+id/lower_text"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/view_gas"
+                android:layout_marginStart="@dimen/view_gas"
+                android:background="@null"
+                android:inputType="number"
+                android:maxLength="2" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dddddd"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="@dimen/length_10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/save"
+            android:background="@drawable/shape_login_btn_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_gas"
+            android:text="保存"
+            android:textColor="@color/while_color"/>
+
+        <Button
+            android:id="@+id/cancle"
+            android:background="@drawable/shape_cancle_btn_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_gas"
+            android:text="取消"
+            android:textColor="@color/while_color"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/bg"
+    tools:context=".activity.SettingActivity">
+
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:background="#A6ffffff"
+        android:padding="@dimen/length_10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="@dimen/view_gas"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/text_blue"
+                android:textSize="@dimen/text_size_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IP  地  址:"/>
+
+            <EditText
+                android:gravity="center"
+                android:text="api.nlecloud.com"
+                android:id="@+id/platformAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_marginLeft="@dimen/view_gas"
+                android:maxLength="100"
+                android:hint="如:192.168.0.111"
+                android:layout_marginStart="@dimen/view_gas" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dddddd"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="@dimen/view_gas"
+            android:orientation="horizontal">
+            <TextView
+                android:textColor="@color/text_blue"
+                android:textSize="@dimen/text_size_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="平台端口:"/>
+
+            <EditText
+                android:id="@+id/port"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/view_gas"
+                android:layout_marginStart="@dimen/view_gas"
+                android:background="@null"
+                android:inputType="number"
+                android:maxLength="20"
+                android:text="80"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dddddd"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="@dimen/view_gas"
+            android:orientation="horizontal">
+            <TextView
+                android:textColor="@color/text_blue"
+                android:textSize="@dimen/text_size_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设  备  ID:"/>
+
+            <EditText
+                android:id="@+id/device_id_text"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/view_gas"
+                android:layout_marginStart="@dimen/view_gas"
+                android:background="@null"
+                android:inputType="number"
+                android:maxLength="20"
+                android:text="9969"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_gas"
+            android:orientation="horizontal">
+            <TextView
+                android:textColor="@color/text_blue"
+                android:textSize="@dimen/text_size_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alarm_temperature_max"/>
+
+            <TextView
+                android:id="@+id/alarm_max_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/view_gas"
+                android:layout_marginStart="@dimen/view_gas"
+                android:inputType="number"
+                android:maxLength="20"
+                android:text="30"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dddddd"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="@dimen/length_10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/save"
+            android:background="@drawable/shape_login_btn_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_gas"
+            android:text="保存"
+            android:textColor="@color/while_color"/>
+
+        <Button
+            android:id="@+id/cancle"
+            android:background="@drawable/shape_cancle_btn_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_gas"
+            android:text="取消"
+            android:textColor="@color/while_color"/>
+    </LinearLayout>
+
+</LinearLayout>

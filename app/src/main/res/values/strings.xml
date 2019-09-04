@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">空调控制器</string>
+    <string name="app_title">空调控制器</string>
+    <string name="alarm_tip_title">报警提示</string>
+    <string name="alarm_tip_message">保险箱异常开启，\n请及时查看现场！</string>
+    <string name="alarm_remove">解除提示</string>
+    <string name="query_datas">批量查询数据</string>
+    <string name="about_message1">空调控制器</string>
+    <string name="about_message2">如果在使用过程中发现问题或提意见,</string>
+    <string name="about_message3">请拨打电话:400 860 0591</string>
+    <string name="about_message4">http://www.newland-edu.com/</string>
+    <string name="about_message5">v1.0.0.3</string>
+
+    <string name="set_uper_limit_value">设置上限值/℃</string>
+    <string name="set_lower_limit_value">设置下限值/℃</string>
+    <string name="uper_limit_value">上限值</string>
+    <string name="lower_limit_value">下限值</string>
+    <string name="current_temperature_value">当前温度值</string>
+    <string name="alarm_temperature">预警：温度过高</string>
+    <string name="heating_text">当前温度值:加热中</string>
+    <string name="refrigerating_text">当前温度值:制冷中</string>
+    <string name="alarm_temperature_max">预警温度值/℃:</string>
+    <string name="controller_status">空调开关状态</string>
+    <string name="open_controller">开启</string>
+    <string name="close_controller">关闭</string>
+    <string name="online_text">设备已经离线</string>
+    <string name="device_not_exist_text">设备不存在</string>
+
+</resources>
